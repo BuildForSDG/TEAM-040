@@ -1,4 +1,7 @@
-const justAuthenticate = isAuthenticated = (req, res, next) => {
+/**
+ * @param isAuthenticated
+ */
+const justAuthenticate = (/* isAuthenticated */) => (req, res, next) => {
   if (typeof req.headers.authorization !== 'undefined') {
     const token = req.headers.authorization.split(' ')[1];
 
@@ -7,7 +10,7 @@ const justAuthenticate = isAuthenticated = (req, res, next) => {
     return next();
   }
 
-  res.status(403).json({ error: "You're Not Authorized, As You're Not Logged In..." });
+  return res.status(403).json({ error: "You're Not Authorized, As You're Not Logged In..." });
 };
 
 module.exports = justAuthenticate;

@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 const { Client } = require('pg');
 
 const client = new Client({
