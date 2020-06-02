@@ -17,7 +17,11 @@
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage",
     "lint": "eslint \"src/**/*.js\"",
+<<<<<<< HEAD
     "start": "parcel ./src/public/index.html"
+=======
+    "start": "parcel ./src/index.html"
+>>>>>>> d0af3f35493d7ecc2b76c8cc4e1fddc10f419d4a
   },
   "author": "Build For SDG <buildforsdg@andela.com>",
   "homepage": "https://github.com/BuildForSDG/js-starter#readme",
@@ -30,6 +34,7 @@
   },
   "license": "MIT",
   "dependencies": {
+<<<<<<< HEAD
     "@testing-library/jest-dom": "^5.9.0",
     "@testing-library/react": "^10.0.5",
     "@testing-library/user-event": "^10.4.1",
@@ -44,6 +49,9 @@
     "react-toastify": "^6.0.5",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
+=======
+    "prettier": "^2.0.5"
+>>>>>>> d0af3f35493d7ecc2b76c8cc4e1fddc10f419d4a
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
