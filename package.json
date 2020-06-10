@@ -30,6 +30,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.2",
+    "duix": "^3.0.1",
     "prettier": "^2.0.5"
   },
   "devDependencies": {
