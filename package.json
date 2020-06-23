@@ -1,0 +1,81 @@
+{
+  "name": "js-starter",
+  "version": "0.0.1",
+  "description": "A boilerplate for starting js code",
+  "keywords": [
+    "js-starter",
+    "boilerplate"
+  ],
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cover": "jest --coverage",
+    "lint": "eslint \"src/**/*.js\" --fix",
+    "start": "node evotingApp.js"
+  },
+  "author": "Build For SDG <buildforsdg@andela.com>",
+  "homepage": "https://github.com/BuildForSDG/js-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuildForSDG/js-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BuildForSDG/js-starter/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.9.0",
+    "@testing-library/react": "^10.0.5",
+    "@testing-library/user-event": "^10.4.1",
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.5.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.4",
+    "jquery": "^3.5.1",
+    "jwt-decode": "^2.2.0",
+    "popper.js": "^1.16.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-countup": "^4.3.3",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-responsive-carousel": "^3.2.7",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-toastify": "^6.0.5",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "tachyons": "^4.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
+    "@babel/plugin-transform-object-assign": "^7.10.1",
+    "@babel/plugin-transform-react-jsx": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.4.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "jest": "^25.4.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.8"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
+}
