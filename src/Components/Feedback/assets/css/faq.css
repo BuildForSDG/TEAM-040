@@ -2,14 +2,81 @@
   src:url('../fonts/Helvetica/HelveticaBlack.otf');
   font-family: 'HelveticaBlack.otf';
 }
+@font-face{
+  src:url('../fonts/Raleway/Raleway-Regular.ttf');
+  font-family:'Raleway-Regular.ttf' ;
+}
+@font-face{
+  src:url('../fonts/roboto/Roboto-Black.ttf');
+  font-family:'Roboto-Black.ttf' ;
+}
 *{
-  margin:0px;
-  padding: 0px;
-  background-color: red !important;
+  margin:0px !important;
+  padding: 0px !important;
+
 }
 .faq-container{
-  background: green;
+  background:rgb(6, 56, 39);
+  border: 0px !important;
+  border-radius: 5px;
+  width: 60vh;
+  height: 50vh;
+  padding: 0px !important;
 }
 .faq-header{
-  color: green;
+  clear: both !important;
+  color: #FFF;
+  font-size: 20px;
+  margin-left: -80px !important;
+  margin-top: -40px !important;
+  text-align: left !important;
+  font-family:'Roboto-Black.ttf' ;
+  padding-top:20px !important;
+  padding-bottom: 20px !important;
+}
+.faq-text{
+  clear: both !important;
+  background:transparent;
+  border-radius: 0px;
+  padding: 10px !important;
+  font-family:'Raleway-Regular.ttf' ;
+  width: 55vh;
+  margin-top: 40px !important;
+  margin-left:-80px !important;
+}
+.btn-danger{
+  background: rgb(19, 18, 18);
+  margin-top: 10px !important;
+  float: right;
+  border-radius: 0px;
+  width: 65%;
+  padding: 6px !important;
+  font-family:'Raleway-Regular.ttf';
+  margin-right: -82px !important;
+  border: 1px solid rgb(109, 109, 109);;
+  color: rgb(233, 227, 227);
+  font-size: 15px;
+}
+.btn-danger:hover{
+  transition: ease-in-out 1s;
+  background:rgb(19, 18, 18) ;
+  border: 1px solid rgb(139, 139, 139);
+  color: rgb(85, 235, 235);
+}
+.nav-link{
+  top: 0px !important;
+  position: relative;
+  bottom: 30px !important;
+  text-align: left;
+  width: 300%;
+  margin-top: 80px !important;
+  margin-left: -85px !important;
+  font-family: 'Raleway-Regular.ttf';
+  color: rgb(250, 228, 228);
+  font-size: 12px;
+  text-decoration: underline;
+  padding: 5px !important;
+}
+.nav-link:{
+  color: red;
 }
