@@ -4,17 +4,7 @@ import "./asset/index.css"
 import "./asset/font-awesome/css/font-awesome.css";
 
 class Feedback extends Component {
-  constructor() {
-    super()
-    this.state = {
-      message:"Welcome on Board"
-    }
-  }
-  changeMessage() {
-    this.setState({
-      message:"Message is Changed"
-    },() => alert(this.state.message))
-  }
+
   render() {
     return (
       <>
@@ -55,7 +45,8 @@ class Feedback extends Component {
                 <input
                   type="email"
                   class="form-control input_styling" 
-                  placeholder="emailaddress@email.com"
+                    placeholder="emailaddress@email.com"
+                    
                   required
                 />
               </div>
@@ -69,7 +60,7 @@ class Feedback extends Component {
                 ></textarea>
               </div>
             </div>
-            <button class="btn btn-dark mybtn" type="submit">
+              <button class="btn btn-dark mybtn"  type="submit">
               Submit
             </button>
           </form>

@@ -14,10 +14,12 @@ import Profile from './Components/Profile/Profile';
 import About from './Components/About/About';
 import Vote from './Components/Votes/Vote';
 import Ballot from './Components/Ballot/Ballot';
+import Feedback from './Components/FeedbackSection/index'
 import RegisterService from './containers/registerService/registerService';
 import LoginService from './containers/loginService/loginService';
 import ContestantService from './containers/contestantService/contestantService';
-import Feedback from './Components/FeedbackSection/index'
+
+
 
 
 
@@ -47,6 +49,7 @@ const App = ({ store }) => {
           <Route path="/signIn" component={LoginService} />
           <Route path="/register" component={RegisterService} />
           <Route path="/Feedback" component={Feedback} />
+          
           <Route component={() => <h1>404 PAGE NOT FOUND</h1>} />
         </Switch>
       </Router>
