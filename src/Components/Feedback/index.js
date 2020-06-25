@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 /* eslint-disable class-methods-use-this */
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
@@ -5,8 +6,8 @@ import './assets/css/index.css';
 import './assets/font-awesome/css/font-awesome.css';
 
 class Feedback extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props)
     this.state = {
       firstname: '',
       lastname: '',
@@ -19,41 +20,47 @@ class Feedback extends Component {
     this.setState(
       {
         firstname: event.target.value
-      },
-      () => console.log(`Firstname: ${this.state.firstname}`)
-    );
-    event.preventDefault();
-  };
+      }
+    )
+    // event.preventDefault();
+  }
 
   lname = (event) => {
     this.setState(
       {
         lastname: event.target.value
-      },
-      () => console.log(`Lastname: ${this.state.lastname}`)
-    );
-    event.preventDefault();
-  };
+      }
+    )
+    // event.preventDefault();
+  }
 
-  email = (event) => {
+  email = event => {
     this.setState(
       {
         email: event.target.value
-      },
-      () => console.log(`email: ${this.state.email}`)
-    );
-    event.preventDefault();
-  };
+      }
+    )
+    // event.preventDefault();
+  }
 
-  comment = (event) => {
-   this.setState(
-     {
-       comments: event.target.value
-     },
-     () => console.log(`comments: ${this.state.comments}`)
-   );
-   event.preventDefault();
- }
+  text = e =>{
+    this.setState({
+      comments:e.target.value
+
+    })
+  }
+
+  handleSubmit = event => {
+    console.log(`
+
+    -- Submitting--
+    First name: ${this.state.firstname}
+    last-name: ${this.state.lastname}
+    Email:${this.state.email}
+    Comments: ${this.state.comments}
+    `)
+    event.preventDefault();
+}
 
   render() {
     return (
@@ -65,7 +72,7 @@ class Feedback extends Component {
               <span className="fa fa-angle-double-right " aria-hidden="true"></span>
               <p className="text-wrapper">Fill in your Complaints here</p>
             </div>
-            <form className="myForm">
+            <form className="myForm" onSubmit={this.handleSubmit}>
               <div className="form-row">
                 <div className="col-md-12 col-sm-6 col-md-6" id="form-style">
                   <label htmlFor="FirstName">First name</label>
@@ -106,12 +113,14 @@ class Feedback extends Component {
                   <textarea
                     className="form-control input-styling"
                     placeholder="Write something here...."
-                    onChange={this.comment}
+                    value={this.state.comments}
+                    onChange={this.text}
                     required
                   ></textarea>
                 </div>
               </div>
-              <button className="btn btn-default submitButton" type="submit">
+              <button className="btn btn-default submitButton"
+                type="submit">
                 Submit
               </button>
             </form>
