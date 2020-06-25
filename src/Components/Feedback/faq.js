@@ -1,6 +1,6 @@
 /* eslint-disable class-methods-use-this */
 import React , {Component} from 'react'
-import './'
+
 
 class Faq extends Component{
 
