@@ -14,10 +14,8 @@ import Profile from './Components/Profile/Profile';
 import About from './Components/About/About';
 import Vote from './Components/Votes/Vote';
 import Ballot from './Components/Ballot/Ballot';
-// import Feedback from './Components/FeedbackSection/index'
-// import Test from './Components/FeedbackSection/test'
 import Feedback from './Components/Feedback/index'
-import TestMethod from './Components/Feedback/test'
+import Faq from './Components/Feedback/faq'
 import RegisterService from './containers/registerService/registerService';
 import LoginService from './containers/loginService/loginService';
 import ContestantService from './containers/contestantService/contestantService';
@@ -49,12 +47,11 @@ const App = ({ store }) => {
           <ProtectedRoute path="/about" component={About} />
           <ProtectedRoute path="/loader" component={Loader} />
           <ProtectedRoute path="/profile" component={Profile} />
-          <Route path="/Feedback" component={Feedback} />
-          <Route path="/TestMethod" component={TestMethod} />
+          <ProtectedRoute path="/Feedback" component={Feedback} />
+          <Route path="/faq" component={Faq} />
           <Route path="/signIn" component={LoginService} />
           <Route path="/register" component={RegisterService} />
-          {/* <Route path="/Test" component={Test} /> */}
-          {/* <ProtectedRoute exact path="/Feedback" component={Feedback} /> */}
+          
 
           <Route component={() => <h1>404 PAGE NOT FOUND</h1>} />
         </Switch>

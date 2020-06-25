@@ -1,0 +1,15 @@
+@font-face{
+  src:url('../fonts/Helvetica/HelveticaBlack.otf');
+  font-family: 'HelveticaBlack.otf';
+}
+*{
+  margin:0px;
+  padding: 0px;
+  background-color: red !important;
+}
+.faq-container{
+  background: green;
+}
+.faq-header{
+  color: green;
+}
