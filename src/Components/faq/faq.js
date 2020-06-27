@@ -1,6 +1,6 @@
 /* eslint-disable class-methods-use-this */
 import React , {Component} from 'react'
-import './assets/css/faq.css'
+import "./faq.css"
 
 class Faq extends Component{
   constructor(){

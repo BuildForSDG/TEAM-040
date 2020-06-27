@@ -1,9 +1,6 @@
+
 @font-face{
-  src:url('../fonts/Helvetica/HelveticaBlack.otf');
-  font-family: 'HelveticaBlack.otf';
-}
-@font-face{
-  src:url('../fonts/Raleway/Raleway-Regular.ttf');
+  src:url('../Feedback/assets/fonts/Raleway/Raleway-Regular.ttf');
   font-family:'Raleway-Regular.ttf' ;
 }
 @font-face{

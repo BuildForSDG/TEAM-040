@@ -15,7 +15,7 @@ import About from './Components/About/About';
 import Vote from './Components/Votes/Vote';
 import Ballot from './Components/Ballot/Ballot';
 import Feedback from './Components/Feedback/index'
-import Faq from './Components/Feedback/faq'
+import Faq from './Components/faq/faq'
 import RegisterService from './containers/registerService/registerService';
 import LoginService from './containers/loginService/loginService';
 import ContestantService from './containers/contestantService/contestantService';
